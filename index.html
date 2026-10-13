@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naveenkumar T. | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body id="home">
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to top">Naveenkumar T.</a>
+    <nav class="topmenu" aria-label="Main navigation">
+      <a class="topmenu" href="#about">About Me</a>
+      <a class="topmenu" href="#projects">Projects</a>
+      <a class="topmenu" href="#skills">Skills</a>
+      <a class="topmenu" href="#recommendations">Recommendations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile section" id="about">
+      <div class="avatar" role="img" aria-label="Illustrated profile avatar">
+        <svg viewBox="0 0 180 180" aria-hidden="true">
+          <circle cx="90" cy="90" r="88" fill="#e6efff"/>
+          <circle cx="90" cy="66" r="31" fill="#c9875d"/>
+          <path d="M58 65 Q54 28 91 28 Q127 29 122 66 L113 53 Q91 60 65 49Z" fill="#17243b"/>
+          <path d="M36 160 Q42 105 90 105 Q138 105 144 160Z" fill="#244c88"/>
+          <path d="M74 106 L90 126 L106 106" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="profile-copy">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1 class="profile-name">Naveenkumar T.</h1>
+        <h2>Full-Stack Developer</h2>
+        <p>I enjoy turning ideas into useful, user-friendly web applications. I work with the MERN stack and modern web technologies, and I’m always learning by building practical projects that solve real problems.</p>
+        <a class="primary-link" href="#projects">Explore my projects</a>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I WORK WITH</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><i class="devicon-html5-plain colored" aria-hidden="true"></i><h3>HTML5</h3><p>Semantic page structure</p></article>
+        <article class="skill-card"><i class="devicon-css3-plain colored" aria-hidden="true"></i><h3>CSS3</h3><p>Responsive layouts and styling</p></article>
+        <article class="skill-card"><i class="devicon-javascript-plain colored" aria-hidden="true"></i><h3>JavaScript</h3><p>Interactive web experiences</p></article>
+        <article class="skill-card"><i class="devicon-react-original colored" aria-hidden="true"></i><h3>React</h3><p>Reusable UI components</p></article>
+        <article class="skill-card"><i class="devicon-nodejs-plain colored" aria-hidden="true"></i><h3>Node.js</h3><p>Server-side JavaScript</p></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="project-number">01</span>
+          <h3>MealMate</h3>
+          <p>A meal-planning concept designed to help people organize meals and make everyday food decisions easier.</p>
+          <div class="tags"><span>React</span><span>JavaScript</span><span>UI Design</span></div>
+        </article>
+        <article class="project-card">
+          <span class="project-number">02</span>
+          <h3>MineX</h3>
+          <p>A student innovation project focused on presenting a practical solution through a clear, accessible digital experience.</p>
+          <div class="tags"><span>Web Development</span><span>Problem Solving</span></div>
+        </article>
+        <article class="project-card">
+          <span class="project-number">03</span>
+          <h3>Smart Clinic Manager</h3>
+          <p>A full-stack application concept for organizing clinic workflows, patient information, and appointment-related tasks.</p>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>Database</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section recommendations-section" id="recommendations">
+      <div class="section-heading">
+        <p class="eyebrow">KIND WORDS</p>
+        <h2>Recommendations</h2>
+      </div>
+      <div class="recommendations-list" id="recommendationsList" aria-live="polite">
+        <blockquote class="recommendation">“Naveenkumar approaches new challenges with curiosity and a willingness to learn. He puts thought into making his work useful and clear.”</blockquote>
+        <blockquote class="recommendation">“He is a collaborative teammate who listens to feedback and keeps improving his technical skills through hands-on practice.”</blockquote>
+        <blockquote class="recommendation">“His interest in building practical applications shows initiative, persistence, and a strong problem-solving mindset.”</blockquote>
+      </div>
+      <div class="recommendation-form-wrap">
+        <h3>Add a recommendation</h3>
+        <form id="recommendationForm">
+          <label for="recommendationInput">Your message</label>
+          <textarea id="recommendationInput" rows="4" placeholder="Write a short recommendation..." required maxlength="500"></textarea>
+          <button type="submit">Submit recommendation</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Designed and built by Naveenkumar T.</p></footer>
+
+  <a href="#home" class="iconbutton" aria-label="Home" title="Back to top">
+    <span aria-hidden="true">⌂</span>
+  </a>
+
+  <div id="popup" class="popup" role="status" aria-live="polite">Thank you! Your recommendation was added.</div>
+  <script src="script.js"></script>
+</body>
+</html>
